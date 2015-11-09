@@ -1,0 +1,798 @@
+/*-------------------------------------------------------*\
+    Base
+/*-------------------------------------------------------*/
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: $sans-serif;
+  font-weight: 400;
+  background: #fff;
+  color: $qc-dimgray;
+  font-size: 1.5rem;
+
+  @include break-at(640px) {
+    font-size: 1.6rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  transition: 0.25s ease all;
+  font-weight: bold;
+
+  &:hover {
+    transition: 0.25s ease all;
+  }
+
+  &.link--contact { font-weight: normal; }
+}
+
+
+
+
+.has-announcement {
+  background: url(../images/bg-wood.png) repeat fixed,
+    url(../images/bg-triangle-down.png) no-repeat 15% -2% $qc-white fixed;
+
+  background-blend-mode: multiply;
+
+  // Space for announcement
+  padding-top: 30px;
+}
+
+
+// Formatting for hours block
+.hours strong {
+  white-space: nowrap;
+
+  @include break-at(640px) {
+    min-width: 100px;
+    display: inline-block;
+  }
+}
+
+div.announcement-overlay {
+  width: 100%;
+  position: absolute;
+  background: $qc-maroon;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  h2 {
+    margin: 10px;
+    font-size: 1.85em;
+    line-height: 1.25;
+    color: $qc-white;
+
+    a:link, a:visited {
+      color: $qc-orange;
+      font-weight: normal;
+    }
+  }
+}
+
+// For the email signup modal
+div.overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(#333,0.65);
+
+  position: fixed;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  z-index: 6000;
+
+  .modal {
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  &.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: -6000;
+
+    .modal {
+      opacity: 0;
+      transform: translate3d(0, -60px, 0);
+      transition: transform 0.4s ease-in-out;
+    }
+  }
+
+  #mc_embed_signup {
+    width: 70%;
+    margin: 0 auto;
+    background: white;
+    max-width: 980px;
+    clear: both;
+    height: auto;
+    min-height: 40vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @include break-at(720px) {
+      flex-direction: row;
+    }
+
+    .close {
+      background: #fff;
+      position: absolute;
+      top: 10px;
+      right: 2rem;
+      z-index: 10;
+      padding: 0.5rem;
+
+      a {
+        display: block;
+        width: 36px;
+        font-weight: bold;
+      }
+    }
+
+    .img {
+      width: 100%;
+
+      @include break-at(720px) { flex: 1; }
+    }
+
+    form {
+      padding: 3rem 2rem;
+      margin-bottom: 0;
+      width: 100%;
+      background: #fff;
+      flex: 1;
+
+      @include break-at(720px) {
+        width: 50%;
+        float: right;
+      }
+
+      input {
+        width: 100%;
+      }
+
+      input[type=submit] {
+        background: $qc-maroon;
+        color: #fff;
+        padding: 0.5rem 0;
+        box-shadow: none;
+        border: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+
+        &:hover {
+          background: $qc-orange;
+        }
+      }
+    }
+  }
+}
+
+header {
+  // background: url(../images/bg-wood.png) repeat fixed,
+  //     url(../images/bg-triangle-left.png) no-repeat 100% 300%;
+  background: url(../images/bg-triangle-left.png) no-repeat 100% 300%;
+  background-blend-mode: luminosity;
+  min-height: 10rem;
+  text-align: right;
+  margin-top: 5rem;
+
+  @include break-at(640px) {
+      margin-top: 0;
+  }
+}
+
+
+ul.social {
+  display: none;
+
+  @include break-at(640px) {
+    margin: $page-margin-narrow 8rem 2rem;
+    display: block;
+  }
+
+  li {
+    margin: 0 0.5rem;
+    display: inline-block;
+
+    a {
+      background: url(../images/icon-email.svg) no-repeat;
+      background-size: 100%;
+      width: 0px;
+      height: 0px;
+      padding: 40px 40px 0 0;
+      overflow: hidden;
+      display: inline-block;
+
+      &:hover {
+        border-bottom: 0px;
+        opacity: 0.75;
+      }
+    }
+
+    &.facebook a {background-image: url(../images/icon-facebook.svg);}
+    &.instagram a {background-image: url(../images/icon-instagram.svg);}
+    &.twitter a {background-image: url(../images/icon-twitter.svg);}
+  }
+}
+
+div.splash {
+  background: $qc-white;
+  margin: 0 $page-margin-narrow;
+  padding: 1rem;
+
+  @include break-at(640px) {
+    margin: 0 8rem 0;
+    padding: $page-margin-narrow;
+  }
+
+  .logo {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    vertical-align: top;
+    text-align: center;
+
+    @include break-at(840px) {
+      width: 37%;
+      margin-left: 5%;
+      display: inline-block;
+    }
+
+    h2 {
+      font-family: $sans-serif;
+      font-weight: bold;
+      font-size: 2.5rem;
+      line-height: 1.125;
+      margin: 3.5rem 0 2rem;
+    }
+  }
+
+  .content {
+    vertical-align: top;
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+
+    @include break-at(840px) {
+      text-align: left;
+      width: 40%;
+      margin: $page-margin-narrow 5% $page-margin-narrow 10%;
+    }
+
+    h1 { margin-bottom: 2rem; }
+
+    p:last-child {
+      &:after {
+        content: '';
+        width: 13rem;
+        height: 3px;
+        background: $qc-maroon;
+        display: block;
+        margin: $page-margin-narrow auto 0;
+
+        @include break-at(840px) { margin: $page-margin-narrow 0 0; }
+      }
+    }
+  }
+}
+
+div.tagline {
+  background: $qc-80sblue;
+  margin: 0 $page-margin-narrow -2rem;
+  padding: 2rem $page-margin-narrow;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+
+  @include break-at(640px) {
+    margin: 0 $page-margin-wide -2rem;
+  }
+
+  h3 {
+    margin: 0;
+    color: $qc-80sblue;
+    line-height: 0.5rem;
+
+    span {
+      color: $qc-dimgray;
+      display: block;
+      margin: 1rem 0;
+    }
+
+    strong {
+      font-weight: normal;
+      line-height: 0;
+    }
+
+    @include break-at(480px) {
+      color: $qc-dimgray;
+      line-height: 1.105;
+
+      span {
+        display: inline;
+        margin: 0;
+      }
+
+      strong { display: none; }
+    }
+
+    @include break-at(820px) {
+      strong { display: inline; }
+    }
+  }
+}
+
+div.mission {
+  background: url(../images/bg-brick.jpg),
+      url(../images/bg-triangle-left.png) no-repeat 100% -231px;
+  background-blend-mode: luminosity;
+  padding: 6rem $page-margin-narrow 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include break-at(840px) {
+    // #TODO: Fix image to not be annoying
+  }
+  @include break-at(920px) {
+    padding: 6rem $page-margin-wide;
+    flex-direction: row;
+  }
+
+  .img {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    // margin-bottom: -($page-margin-narrow);
+    z-index: 1;
+
+    @include break-at(700px) {
+    }
+
+    @include break-at(840px) {
+    }
+
+    img {
+      height: auto;
+      max-height: 50vh;
+      max-width: 100%;
+      border: 15px solid #fff;
+
+      @include break-at(920px) { max-height: 70vh; height: 70vh; }
+    }
+  }
+
+  .content {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 2rem $page-margin-narrow;
+    width: 100%;
+    z-index: 0;
+
+    background: $qc-80sgreen;
+    text-align: left;
+
+    @include break-at(600px) { padding: 2rem $page-margin-wide; }
+
+    @include break-at(920px) {
+      position: relative;
+      left: -5px;
+      margin-top: 2rem;
+      margin-right: -5px;
+      padding: 2rem $page-margin-narrow;
+    }
+
+    @include break-at(1120px) { padding: 2rem $page-margin-wide; }
+  }
+}
+
+div.features {
+  padding: 0 $page-margin-narrow 0;
+  margin-top: 5rem;
+  background: #fff;
+  text-align: center;
+
+  @include break-at(640px) {
+    padding: 5rem $page-margin-wide 0;
+  }
+
+  @include break-at(900px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include break-at(1120px) {
+    padding-left: $page-margin-wide;
+    padding-right: $page-margin-wide;
+  }
+
+  .content {
+    display: inline-block;
+    width: 100%;
+
+    h2 {
+      font-size: 5rem;
+      padding: 2rem;
+      line-height: 1.2;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      margin: 15px 0 0;
+      padding: 10px 10%;
+      background: $qc-80sblue;
+
+      @include break-at(640px) {
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      font-size: 1.75rem;
+      padding: 15px 0 0 10%;
+      margin-bottom: 0;
+
+      @include break-at(640px) {
+        font-size: 1.6rem;
+      }
+
+      a { white-space: nowrap; }
+    }
+
+    li {
+      display: inline-block;
+      margin-bottom: 7%;
+      vertical-align: top;
+      width: 100%;
+      text-align: left;
+
+      @include break-at(480px) {
+        width: 46%;
+        margin-right: 3%;
+      }
+
+      img {
+        display: inline-block;
+        border: 3px solid #fff;
+
+
+        @include break-at(900px) {
+          max-width: 40%;
+        }
+      }
+
+      .text {
+        display: inline-block;
+        vertical-align: top;
+        margin: -1rem 0 1rem;
+
+        @include break-at(900px) {
+          width: 40%;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+div.announce {
+  .content {
+    padding: 1.5rem $page-margin-narrow 0.5rem;
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    background: $qc-80sgreen;
+
+    @include break-at(640px) { padding: 2rem $page-margin-narrow; }
+
+    h1 {
+      font-size: 7rem;
+      line-height: 1;
+      margin-bottom: 1rem;
+
+      span {
+        display: block;
+        font-size: 0.65em;
+
+        @include break-at(640px) {
+          display: inline;
+          font-size: 1em;
+        }
+      }
+    }
+
+    ul {
+      @include break-at(640px) {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+      }
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      flex-grow: 1;
+
+      @include break-at(640px) {
+        width: 29%;
+        margin: 2%;
+      }
+
+      a, .fb_iframe_widget {
+        display: block;
+        padding: 1rem 2rem;
+        background: #fff;
+        min-height: 68px;
+        border-bottom: 1px solid #fff;
+        min-height: 14vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          border-bottom: 1px solid $qc-orange;;
+        }
+
+        span {
+          display: block;
+        }
+      }
+
+      .fb_iframe_widget > span, .fb_iframe_widget iframe {
+        max-width: 100% !important;
+        position: relative;
+        min-height: 20px;
+        // height: auto !important;
+        text-align: center;
+        font-weight: bold;
+        color: $qc-maroon;
+        box-sizing: content-box;
+        padding-bottom: 1em;
+      }
+
+      .fb_iframe_widget > span:before {
+        content: 'Follow our progress on Facebook';
+      }
+    }
+  }
+}
+
+
+div.mapper {
+  padding: 0 $page-margin-narrow 5rem;
+  margin-top: $page-margin-wide;
+  text-align: center;
+
+  @include break-at(640px) {
+    padding: 0 $page-margin-wide 5rem;
+    text-align: left;
+  }
+
+  > h1 {
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: .25em;
+  }
+
+  .map-container {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+
+   @include break-at(840px) { width: 50%; }
+  }
+
+  .map-overlay {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: 300px; /* your iframe height */
+    top: 300px;  /* your iframe height */
+    margin-top: -300px;  /* your iframe height */
+  }
+
+  .content {
+    display: inline-block;
+    margin-top: 2rem;
+    vertical-align: middle;
+    width: 100%;
+
+    .content__shopdetails { display: flex; }
+    .content__hours {
+      flex: 1;
+      margin-right: 1rem;
+    }
+    .content__location {
+      flex: 1;
+      white-space: nowrap;
+    }
+
+    @include break-at(840px) {
+      .content__shopdetails { display: block; }
+    }
+
+    @include break-at(840px) {
+      width: 40%;
+      margin-left: 5%;
+    }
+
+    @include break-at(960px) {
+      .content__shopdetails { display: flex; }
+      .content__hours { flex: 2; margin-right: 1rem; }
+      .content__location { flex: 1; }
+    }
+
+    @include break-at(1120px) {
+      .content__hours { flex: 1; }
+    }
+  }
+
+  iframe {
+    display: inline-block;
+    height: 300px;
+    width: 100%;
+    vertical-align: top;
+    border: 15px solid #fff !important;
+  }
+}
+
+div.joinus {
+  background: url(../images/pic-onstage.jpg) no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  padding: 2rem $page-margin-narrow;
+  min-height: 600px;
+
+  @include break-at(640px) {
+    padding: 2rem $page-margin-wide;
+    background-size: 100%;
+  }
+
+  .content {
+    padding: $page-margin-narrow;
+    background: $qc-white;
+    text-align: center;
+    display: flex;
+
+    @include break-at(640px) {
+      padding: 6rem;
+      width: 500px;
+      height: 500px;
+      margin: 100px auto;
+      border-radius: 50%;
+    }
+
+    .content__inner {
+      align-self: center;
+    }
+
+    a {
+      display: block;
+      width: 80%;
+      background: $qc-maroon;
+      padding: 2rem;
+      color: #fff;
+      margin: 0 auto;
+
+      @include break-at(640px) {
+        width: 50%;
+      }
+
+      &:hover {
+        background: $qc-orange;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+footer {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+
+  .footer__logo {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 4rem 1rem 16rem;
+    background: url(../images/bg-triangle-footer.png) no-repeat left -15px;
+
+    h5 {
+      text-align: right;
+      width: 80%;
+      white-space: nowrap;
+    }
+
+    img {
+      width: 80%;
+    }
+
+    @include break-at(640px) {
+      width: 40%;
+      min-height: 400px;
+      padding-left: 6rem;
+    }
+    @include break-at(840px) { padding-left: 16rem; }
+  }
+
+  .footer__contact {
+    vertical-align: top;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    text-align: center;
+
+    @include break-at(640px) {
+      width: 48%;
+      display: inline-block;
+      text-align: left;
+    }
+
+    @include break-at(880px) {
+      width: 25%;
+      margin: 5rem 0 0;
+      text-align: left;
+    }
+
+    &:last-child {
+      @include break-at(480px) {
+        width: 100%;
+        text-align: center;
+      }
+      @include break-at(850px) {
+        width: 25%;
+        text-align: left;
+      }
+    }
+
+    .hours strong {
+      font-weight: normal;
+
+      &:first-child {
+        display: block;
+        font-weight: bold;
+      }
+    }
+  }
+
+  ul.social, #mc_embed_signup {
+    margin: 0;
+    margin-top: -2rem;
+    display: block;
+  }
+
+  .🐠 {
+    margin-top: 5.4rem;
+    font-weight: bold;
+  }
+}
+

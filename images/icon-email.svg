@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>email</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="v4" sketch:type="MSArtboardGroup" transform="translate(-1158.000000, -40.000000)" fill="#FF8686">
+            <path d="M1182.00006,39.9998741 C1168.72225,39.9998741 1158,50.7776802 1158,63.9999371 C1158,77.2777497 1168.72225,88 1182.00006,88 C1195.22232,88 1206.00013,77.2777497 1206.00013,63.9999371 C1206.00013,50.7776802 1195.22232,39.9998741 1182.00006,39.9998741 L1182.00006,39.9998741 Z M1197.0001,73.1110721 C1197.0001,74.1666304 1196.16677,74.9999659 1195.11121,74.9999659 L1168.88892,74.9999659 C1167.83336,74.9999659 1167.00002,74.1666304 1167.00002,73.1110721 L1167.00002,58.7777011 L1182.00006,69.9999528 L1197.0001,58.7777011 L1197.0001,73.1110721 Z M1182.00006,66.1110537 L1167.00002,54.8888021 C1167.00002,53.8332437 1167.83336,52.9999082 1168.88892,52.9999082 L1195.11121,52.9999082 C1196.16677,52.9999082 1197.0001,53.8332437 1197.0001,54.8888021 L1182.00006,66.1110537 Z" id="email" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

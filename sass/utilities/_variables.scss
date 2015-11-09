@@ -1,0 +1,65 @@
+/*-------------------------------------------------------*\
+    Variables
+/*-------------------------------------------------------*/
+
+/*	Grid
+--------------------------------------------------------*/
+
+$columns: 12;
+$column-width: 65px;
+$gutter-width: 20px;
+
+// Basic or Advanced usage
+$advanced-usage: false;
+
+
+/*	Colors
+--------------------------------------------------------*/
+
+	$qc-white:			#FBF9F9;
+	$qc-ltgray: 		Gainsboro;
+	$qc-dkgray:			DarkGray;
+	$qc-dimgray:		DimGray;
+	$qc-maroon:			#76321F;
+	$qc-orange:			#ff9c08;
+	$qc-80sblue:		#CDFCFF;
+	$qc-80sgreen:		#CDFFEB;
+
+	$primary-color:		$qc-maroon;
+	$secondary-color: 	$qc-orange;
+
+
+
+// Typography
+	$atrament:			"atrament-web", "Atrament std", "Din 1451 Std", Din, Arial Narrow, Futura, serif;
+	$sans-serif:		Avenir, Univers, Arial, sans-serif;
+	$serif:				Georgia, Berkeley, serif;
+
+	$sarina:			"sarina", script;
+	$azo:				"azo-sans-uber", Quatro, Arial, Futura, $serif;
+	$averia:			"averia libre", $sans-serif;
+	$knewave:			"Knewave", cursive;
+	$annie:				"Annie Use Your Telescope", serif;
+	$vortice:			"vortice-concept", Din, Arial Narrow, Futura, $serif;
+
+	$thin:				100;
+	$light:				300;
+	$normal:			400;
+	$semibold:			600;
+	$bold:				700;
+
+
+
+	.sarina {font-family: $sarina;}
+	.knewave {font-family: $knewave;}
+	.azo {font-family: $azo;}
+	.averia {font-family: $averia;}
+	.annie {font-family: $annie;}
+	.vortice {font-family: $vortice;}
+
+
+// Variable widths
+	$page-margin-wide:		8rem;
+	$page-margin-narrow:	3rem;
+
+
