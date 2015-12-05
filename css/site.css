@@ -1476,6 +1476,11 @@ a {
   a.link--contact {
     font-weight: normal; }
 
+.announce-holiday {
+  font-weight: bold;
+  color: #76321F;
+  font-size: 1.2em; }
+
 .has-announcement {
   background: url(../images/bg-wood.png) repeat fixed, url(../images/bg-triangle-down.png) no-repeat 15% -2% #FBF9F9 fixed;
   background-blend-mode: multiply;
