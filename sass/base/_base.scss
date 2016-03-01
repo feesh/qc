@@ -207,6 +207,8 @@ header {
   @include break-at(640px) {
       margin-top: 0;
   }
+
+  .subpage & { background: transparent; }
 }
 
 
@@ -216,6 +218,11 @@ ul.social {
   @include break-at(640px) {
     margin: $page-margin-narrow 8rem 2rem;
     display: block;
+  }
+
+  .subpage header & {
+    float: right;
+    max-width: 45%;
   }
 
   li {
@@ -253,6 +260,11 @@ div.splash {
     padding: $page-margin-narrow;
   }
 
+  .subpage & {
+    background: transparent;
+    text-align: left;
+  }
+
   .logo {
     display: block;
     width: 90%;
@@ -265,6 +277,17 @@ div.splash {
       width: 37%;
       margin-left: 5%;
       display: inline-block;
+    }
+
+    .subpage & {
+      @include break-at(840px) {
+        width: 10%;
+      }
+    }
+
+    a:hover {
+      border-bottom: 0;
+      opacity: 0.75;
     }
 
     h2 {
@@ -681,6 +704,57 @@ div.joinus {
   @include break-at(640px) {
     padding: 2rem $page-margin-wide;
     background-size: 100%;
+  }
+
+  .content {
+    padding: $page-margin-narrow;
+    background: $qc-white;
+    text-align: center;
+    display: flex;
+
+    @include break-at(640px) {
+      padding: 6rem;
+      width: 500px;
+      height: 500px;
+      margin: 100px auto;
+      border-radius: 50%;
+    }
+
+    .content__inner {
+      align-self: center;
+    }
+
+    a {
+      display: block;
+      width: 80%;
+      background: $qc-maroon;
+      padding: 2rem;
+      color: #fff;
+      margin: 0 auto;
+
+      @include break-at(640px) {
+        width: 50%;
+      }
+
+      &:hover {
+        background: $qc-orange;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+div.mixtape {
+  background: url('https://media1.giphy.com/media/JKHXZCkuRhxmw/200.gif') no-repeat;
+  background-color: darken($qc-80sblue,20);
+  background-size: 100% auto;
+  background-position: center 18px;
+  padding: 10rem $page-margin-narrow;
+  min-height: 500px;
+
+  @include break-at(640px) {
+    padding: 4rem $page-margin-wide;
+    background-position: center center;
   }
 
   .content {

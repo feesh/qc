@@ -1630,6 +1630,8 @@ header {
   @media (min-width: 640px) {
     header {
       margin-top: 0; } }
+  .subpage header {
+    background: transparent; }
 
 ul.social {
   display: none; }
@@ -1637,6 +1639,9 @@ ul.social {
     ul.social {
       margin: 3rem 8rem 2rem;
       display: block; } }
+  .subpage header ul.social {
+    float: right;
+    max-width: 45%; }
   ul.social li {
     margin: 0 0.5rem;
     display: inline-block; }
@@ -1667,6 +1672,9 @@ div.splash {
     div.splash {
       margin: 0 8rem 0;
       padding: 3rem; } }
+  .subpage div.splash {
+    background: transparent;
+    text-align: left; }
   div.splash .logo {
     display: block;
     width: 90%;
@@ -1679,6 +1687,12 @@ div.splash {
         width: 37%;
         margin-left: 5%;
         display: inline-block; } }
+    @media (min-width: 840px) {
+      .subpage div.splash .logo {
+        width: 10%; } }
+    div.splash .logo a:hover {
+      border-bottom: 0;
+      opacity: 0.75; }
     div.splash .logo h2 {
       font-family: Avenir, Univers, Arial, sans-serif;
       font-weight: bold;
@@ -2084,6 +2098,51 @@ div.joinus {
         div.joinus .content a {
           width: 50%; } }
       div.joinus .content a:hover {
+        background: #ff9c08;
+        border-bottom: none; }
+
+div.mixtape {
+  background: url('https://media1.giphy.com/media/JKHXZCkuRhxmw/200.gif') no-repeat;
+  background-color: #67f7ff;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  background-position: center 18px;
+  padding: 10rem 3rem;
+  min-height: 500px; }
+  @media (min-width: 640px) {
+    div.mixtape {
+      padding: 4rem 8rem;
+      background-position: center center; } }
+  div.mixtape .content {
+    padding: 3rem;
+    background: #FBF9F9;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (min-width: 640px) {
+      div.mixtape .content {
+        padding: 6rem;
+        width: 500px;
+        height: 500px;
+        margin: 100px auto;
+        border-radius: 50%; } }
+    div.mixtape .content .content__inner {
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center; }
+    div.mixtape .content a {
+      display: block;
+      width: 80%;
+      background: #76321F;
+      padding: 2rem;
+      color: #fff;
+      margin: 0 auto; }
+      @media (min-width: 640px) {
+        div.mixtape .content a {
+          width: 50%; } }
+      div.mixtape .content a:hover {
         background: #ff9c08;
         border-bottom: none; }
 
