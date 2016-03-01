@@ -807,6 +807,19 @@ footer {
     padding: 1rem 4rem 1rem 16rem;
     background: url(../images/bg-triangle-footer.png) no-repeat left -15px;
 
+    @include break-at(640px) {
+      width: 40%;
+      min-height: 450px;
+      padding-left: 6rem;
+    }
+
+    @include break-at(840px) { padding-left: 16rem; }
+
+    a:hover {
+      border-bottom: 0;
+      opacity: 0.75;
+    }
+
     h5 {
       text-align: right;
       width: 80%;
@@ -817,12 +830,16 @@ footer {
       width: 80%;
     }
 
-    @include break-at(640px) {
-      width: 40%;
-      min-height: 400px;
-      padding-left: 6rem;
+    .subpage & {
+      @include break-at(840px) { padding-left: 2rem; }
+
+      h5 { padding-right: 7rem; }
+
+      img {
+        margin-top: 2em;
+        width: 35%;
+      }
     }
-    @include break-at(840px) { padding-left: 16rem; }
   }
 
   .footer__contact {

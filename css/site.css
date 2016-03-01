@@ -2156,20 +2156,31 @@ footer {
     text-align: center;
     padding: 1rem 4rem 1rem 16rem;
     background: url(../images/bg-triangle-footer.png) no-repeat left -15px; }
+    @media (min-width: 640px) {
+      footer .footer__logo {
+        width: 40%;
+        min-height: 450px;
+        padding-left: 6rem; } }
+    @media (min-width: 840px) {
+      footer .footer__logo {
+        padding-left: 16rem; } }
+    footer .footer__logo a:hover {
+      border-bottom: 0;
+      opacity: 0.75; }
     footer .footer__logo h5 {
       text-align: right;
       width: 80%;
       white-space: nowrap; }
     footer .footer__logo img {
       width: 80%; }
-    @media (min-width: 640px) {
-      footer .footer__logo {
-        width: 40%;
-        min-height: 400px;
-        padding-left: 6rem; } }
     @media (min-width: 840px) {
-      footer .footer__logo {
-        padding-left: 16rem; } }
+      .subpage footer .footer__logo {
+        padding-left: 2rem; } }
+    .subpage footer .footer__logo h5 {
+      padding-right: 7rem; }
+    .subpage footer .footer__logo img {
+      margin-top: 2em;
+      width: 35%; }
   footer .footer__contact {
     vertical-align: top;
     margin: 0 auto;
