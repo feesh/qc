@@ -2216,6 +2216,8 @@ footer {
   footer .🐠 {
     margin-top: 5.4rem;
     font-weight: bold; }
+    footer .🐠 span {
+      font-weight: normal; }
 
 /*-------------------------------------------------------*\
     Grid
