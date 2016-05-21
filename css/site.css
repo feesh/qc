@@ -1483,6 +1483,10 @@ a {
   color: #76321F;
   font-size: 1.2em; }
 
+.details {
+  font-size: 1.2rem;
+  font-style: italic; }
+
 .has-announcement {
   background: url(../images/bg-wood.png) repeat fixed, url(../images/bg-triangle-down.png) no-repeat 15% -2% #FBF9F9 fixed;
   background-blend-mode: multiply;
@@ -2159,6 +2163,8 @@ div.mixtape {
       div.mixtape .content a:hover {
         background: #ff9c08;
         border-bottom: none; }
+    div.mixtape .content .details {
+      padding: 2rem 2rem 0; }
 
 footer {
   background: #fff;
