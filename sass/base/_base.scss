@@ -50,7 +50,10 @@ a {
   font-size: 1.2em;
 }
 
-
+.details {
+  font-size: 1.2rem;
+  font-style: italic;
+}
 
 
 .has-announcement {
@@ -812,6 +815,10 @@ div.mixtape {
         background: $qc-orange;
         border-bottom: none;
       }
+    }
+
+    .details {
+      padding: 2rem 2rem 0;
     }
   }
 }
