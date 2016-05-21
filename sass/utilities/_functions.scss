@@ -20,5 +20,5 @@ $grid-width: $columns * $column-width + ($columns - 1) * $gutter-width;
 
   $width: $value * $column-width + ($value - 1) * $gutter-width;
   @return percentage($width, $grid-width);
-  
+
 }

@@ -25,7 +25,7 @@ $advanced-usage: false;
 	$qc-80sblue:		#CDFCFF;
 	$qc-80sgreen:		#CDFFEB;
 
-	$primary-color:		$qc-maroon;
+	$primary-color:			$qc-maroon;
 	$secondary-color: 	$qc-orange;
 
 
@@ -33,10 +33,10 @@ $advanced-usage: false;
 // Typography
 	$atrament:			"atrament-web", "Atrament std", "Din 1451 Std", Din, Arial Narrow, Futura, serif;
 	$sans-serif:		Avenir, Univers, Arial, sans-serif;
-	$serif:				Georgia, Berkeley, serif;
+	$serif:					Georgia, Berkeley, serif;
 
 	$sarina:			"sarina", script;
-	$azo:				"azo-sans-uber", Quatro, Arial, Futura, $serif;
+	$azo:					"azo-sans-uber", Quatro, Arial, Futura, $serif;
 	$averia:			"averia libre", $sans-serif;
 	$knewave:			"Knewave", cursive;
 	$annie:				"Annie Use Your Telescope", serif;
@@ -45,16 +45,16 @@ $advanced-usage: false;
 	$thin:				100;
 	$light:				300;
 	$normal:			400;
-	$semibold:			600;
+	$semibold:		600;
 	$bold:				700;
 
 
 
-	.sarina {font-family: $sarina;}
+	.sarina  {font-family: $sarina;}
 	.knewave {font-family: $knewave;}
-	.azo {font-family: $azo;}
-	.averia {font-family: $averia;}
-	.annie {font-family: $annie;}
+	.azo     {font-family: $azo;}
+	.averia  {font-family: $averia;}
+	.annie   {font-family: $annie;}
 	.vortice {font-family: $vortice;}
 
 

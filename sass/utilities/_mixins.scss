@@ -3,67 +3,50 @@
 /*-------------------------------------------------------*/
 
 /*	Column width
--------------------------------------------------------*/ 
+-------------------------------------------------------*/
 
 @mixin columns($columns, $omega:false) {
 
-    float: left;
-    width: column($columns);
+  float: left;
+  width: column($columns);
 
-      @if $omega == omega {
+  @if $omega == omega {
+    margin-right: 0;
+  }
 
-         margin-right: 0;
-
-      }
-
-      @else {
-
-         margin-right: percentage($gutter-width, $grid-width);
-
-      }
-  
+  @else {
+    margin-right: percentage($gutter-width, $grid-width);
+  }
 }
 
 /*	Column push
 -------------------------------------------------------*/
 @mixin push($columns) {
-
-    $margin: column($columns) + percentage($gutter-width, $grid-width);
-    margin-left: $margin;
-
+  $margin: column($columns) + percentage($gutter-width, $grid-width);
+  margin-left: $margin;
 }
 
 
 /*	Clearfix
--------------------------------------------------------*/ 
+-------------------------------------------------------*/
 
 @mixin clearfix() {
-
 	&:before,
 	&:after {
-
-	    content: "";
-	    display: table;
-
+    content: "";
+    display: table;
 	}
-	
+
 	&:after {
-
-	    clear: both;
-
+    clear: both;
 	}
-
 }
 
 /*	Breakpoints
--------------------------------------------------------*/ 
+-------------------------------------------------------*/
 
 @mixin break-at($point) {
-
 	@media (min-width: $point)  {
-
-			@content;
-
+		@content;
 	}
-
 }
