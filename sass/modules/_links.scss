@@ -4,34 +4,26 @@
 
 a {
 
-    color: $primary-color;
-    cursor: pointer;
-    text-decoration: none;
-    outline: 0;
+  color: $primary-color;
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0;
 
-    &:hover {
+  &:hover {
+    color: $secondary-color;
+    border-bottom: 1px solid $secondary-color;
+  }
 
-        color: $secondary-color;
-        border-bottom: 1px solid $secondary-color;
+  &:active {
+    color: darken( $primary-color, 10% );
+  }
 
-    }
+  &:focus {
+    color: darken( $primary-color, 10% );
+  }
 
-    &:active {
-
-        color: darken( $primary-color, 10% );
-
-    }
-
-    &:focus {
-
-        color: darken( $primary-color, 10% );
-
-    }
-
-    &:focus {
-
-        outline: 2px solid $primary-color;
-
-    }
+  &:focus {
+    outline: 2px solid $primary-color;
+  }
 
 }

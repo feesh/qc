@@ -2337,7 +2337,7 @@ footer {
     margin-left: 102%; } }
 
 /*-------------------------------------------------------*\
-    Typography
+  Typography
 /*-------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "atrament-web", "Atrament std", "Din 1451 Std", Din, Arial Narrow, Futura, serif;
@@ -2516,7 +2516,7 @@ sub {
   top: 0.4em; }
 
 /*-------------------------------------------------------*\
-    Buttons
+  Buttons
 /*-------------------------------------------------------*/
 .primary-button {
   display: inline-block;
@@ -2548,7 +2548,7 @@ sub {
     background: #222; }
 
 /*-------------------------------------------------------*\
-    Forms
+  Forms
 /*-------------------------------------------------------*/
 input, textarea, select {
   margin-bottom: 1.5rem; }
