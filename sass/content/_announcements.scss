@@ -1,0 +1,129 @@
+/*-------------------------------------------------------*\
+    Content areas
+/*-------------------------------------------------------*/
+
+
+.announce-holiday {
+  font-weight: bold;
+  color: $primary-color;
+  font-size: 1.2em;
+}
+
+.has-announcement {
+  background: url(../images/bg-wood.png) repeat fixed,
+    url(../images/bg-triangle-down.png) no-repeat 15% -2% $qc-white fixed;
+
+  background-blend-mode: multiply;
+
+  // Space for announcement
+  padding-top: 30px;
+}
+
+div.announcement-overlay {
+  width: 100%;
+  position: absolute;
+  background: $qc-maroon;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  h2 {
+    margin: 10px;
+    font-size: 1.85em;
+    line-height: 1.25;
+    color: $qc-white;
+
+    a:link, a:visited {
+      color: $qc-orange;
+      font-weight: normal;
+    }
+  }
+}
+
+
+div.announce {
+  .content {
+    padding: 1.5rem $page-margin-narrow 0.5rem;
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    background: $qc-80sgreen;
+
+    @include break-at(640px) { padding: 2rem $page-margin-narrow; }
+
+    h1 {
+      font-size: 7rem;
+      line-height: 1;
+      margin-bottom: 1rem;
+
+      span {
+        display: block;
+        font-size: 0.65em;
+
+        @include break-at(640px) {
+          display: inline;
+          font-size: 1em;
+        }
+      }
+    }
+
+    ul {
+      @include break-at(640px) {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+      }
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      flex-grow: 1;
+
+      @include break-at(640px) {
+        width: 29%;
+        margin: 2%;
+      }
+
+      a, .fb_iframe_widget {
+        display: block;
+        padding: 1rem 2rem;
+        background: #fff;
+        min-height: 68px;
+        border-bottom: 1px solid #fff;
+        min-height: 14vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          border-bottom: 1px solid $qc-orange;;
+        }
+
+        span {
+          display: block;
+        }
+      }
+
+      .fb_iframe_widget > span, .fb_iframe_widget iframe {
+        max-width: 100% !important;
+        position: relative;
+        min-height: 20px;
+        // height: auto !important;
+        text-align: center;
+        font-weight: bold;
+        color: $qc-maroon;
+        box-sizing: content-box;
+        padding-bottom: 1em;
+      }
+
+      .fb_iframe_widget > span:before {
+        content: 'Follow our progress on Facebook';
+      }
+    }
+  }
+}
+

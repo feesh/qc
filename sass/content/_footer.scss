@@ -1,0 +1,105 @@
+/*-------------------------------------------------------*\
+    Footer
+/*-------------------------------------------------------*/
+
+
+footer {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+
+  .footer__logo {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 4rem 1rem 16rem;
+    background: url(../images/bg-triangle-footer.png) no-repeat left -15px;
+
+    @include break-at(640px) {
+      width: 40%;
+      min-height: 450px;
+      padding-left: 6rem;
+    }
+
+    @include break-at(840px) { padding-left: 16rem; }
+
+    a:hover {
+      border-bottom: 0;
+      opacity: 0.75;
+    }
+
+    h5 {
+      text-align: right;
+      width: 80%;
+      white-space: nowrap;
+    }
+
+    img {
+      width: 80%;
+    }
+
+    .subpage & {
+      @include break-at(840px) { padding-left: 2rem; }
+
+      h5 { padding-right: 7rem; }
+
+      img {
+        margin-top: 2em;
+        width: 35%;
+      }
+    }
+  }
+
+  .footer__contact {
+    vertical-align: top;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    text-align: center;
+
+    @include break-at(640px) {
+      width: 48%;
+      display: inline-block;
+      text-align: left;
+    }
+
+    @include break-at(880px) {
+      width: 25%;
+      margin: 5rem 0 0;
+      text-align: left;
+    }
+
+    &:last-child {
+      @include break-at(480px) {
+        width: 100%;
+        text-align: center;
+      }
+      @include break-at(850px) {
+        width: 25%;
+        text-align: left;
+      }
+    }
+
+    .hours strong {
+      font-weight: normal;
+
+      &:first-child {
+        display: block;
+        font-weight: bold;
+      }
+    }
+  }
+
+  ul.social, #mc_embed_signup {
+    margin: 0;
+    margin-top: -2rem;
+    display: block;
+  }
+
+  .🐠 {
+    margin-top: 5.4rem;
+    font-weight: bold;
+
+    span { font-weight: normal; }
+  }
+}
+

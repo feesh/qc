@@ -1,0 +1,23 @@
+/*-------------------------------------------------------*\
+    Header
+/*-------------------------------------------------------*/
+
+
+
+header {
+  // background: url(../images/bg-wood.png) repeat fixed,
+  //     url(../images/bg-triangle-left.png) no-repeat 100% 300%;
+  background: url(../images/bg-triangle-left.png) no-repeat 100% 300%;
+  background-blend-mode: luminosity;
+  min-height: 10rem;
+  text-align: right;
+  margin-top: 5rem;
+
+  @include break-at(640px) {
+      margin-top: 0;
+  }
+
+  .subpage & { background: transparent; }
+}
+
+
