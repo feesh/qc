@@ -1,7 +1,7 @@
 # qc
 Website for Qulture Collective
-http://qulturecollective.com
-http://qultr.co/
+- http://qulturecollective.com
+- http://qultr.co/
 
 ## What's goin on!?
 1. Run the server using `gulp` and it will show up on `localhost:3000` (index.html).
