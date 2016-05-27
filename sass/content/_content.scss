@@ -2,7 +2,83 @@
     Content areas
 /*-------------------------------------------------------*/
 
+.intro {
+  background: url(../images/bg-wood.png) repeat fixed,
+    url(../images/bg-triangle-down.png) no-repeat 15% -2% $qc-white fixed;
 
+  background-blend-mode: multiply;
+
+  &__tagline {
+    background: $qc-80sblue;
+    padding: 2rem $page-margin-narrow;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+    @include break-at(640px) {
+      margin: 0 $page-margin-wide;
+    }
+  }
+
+  &__subheader {
+    margin: 0;
+    color: $qc-80sblue;
+    line-height: 0.5rem;
+
+    span {
+      color: $qc-dimgray;
+      display: block;
+      margin: 1rem 0;
+    }
+
+    strong {
+      font-weight: normal;
+      line-height: 0;
+    }
+
+    @include break-at(480px) {
+      color: $qc-dimgray;
+      line-height: 1.105;
+      font-size: 4rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      span {
+        display: inline;
+        margin: 0;
+        padding: 0 2rem;
+      }
+
+      strong { display: none; }
+    }
+
+    @include break-at(820px) {
+      strong { display: inline; }
+    }
+  }
+
+  &__content {
+    padding: 2rem $page-margin-narrow;
+
+    display: flex;
+    flex-flow: row;
+    @include break-at(640px) {
+      margin: 0 $page-margin-wide;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    flex: 1 0 40%;
+    justify-content: center;
+  }
+
+  &__copy {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+}
 
 div.splash {
   background: $qc-white;
@@ -78,56 +154,6 @@ div.splash {
 
         @include break-at(840px) { margin: $page-margin-narrow 0 0; }
       }
-    }
-  }
-}
-
-div.tagline {
-  background: $qc-80sblue;
-  margin: 0 $page-margin-narrow -2rem;
-  padding: 2rem $page-margin-narrow;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-
-  @include break-at(640px) {
-    margin: 0 $page-margin-wide -2rem;
-  }
-
-  h3 {
-    margin: 0;
-    color: $qc-80sblue;
-    line-height: 0.5rem;
-
-    span {
-      color: $qc-dimgray;
-      display: block;
-      margin: 1rem 0;
-    }
-
-    strong {
-      font-weight: normal;
-      line-height: 0;
-    }
-
-    @include break-at(480px) {
-      color: $qc-dimgray;
-      line-height: 1.105;
-      font-size: 4rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-
-      span {
-        display: inline;
-        margin: 0;
-        padding: 0 2rem;
-      }
-
-      strong { display: none; }
-    }
-
-    @include break-at(820px) {
-      strong { display: inline; }
     }
   }
 }
