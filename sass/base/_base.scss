@@ -18,11 +18,6 @@ body {
   color: $qc-dimgray;
   font-size: 1.5rem;
 
-  background: url(../images/bg-wood.png) repeat fixed,
-    url(../images/bg-triangle-down.png) no-repeat 15% -2% $qc-white fixed;
-
-  background-blend-mode: multiply;
-
   @include break-at(640px) {
     font-size: 1.6rem;
   }
