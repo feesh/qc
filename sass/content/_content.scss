@@ -14,10 +14,6 @@
     text-align: center;
     position: relative;
     z-index: 2;
-
-    @include break-at(640px) {
-      margin: 0 $page-margin-wide;
-    }
   }
 
   &__subheader {
@@ -58,24 +54,26 @@
   }
 
   &__content {
-    padding: 2rem $page-margin-narrow;
+    padding: 6rem $page-margin-narrow;
 
     display: flex;
     flex-flow: row;
-    @include break-at(640px) {
-      margin: 0 $page-margin-wide;
-    }
+    justify-content: center;
   }
 
   &__logo {
     display: flex;
-    flex: 1 0 40%;
+    flex: 0 1 40%;
     justify-content: center;
   }
 
   &__copy {
+    h1 {
+      margin: 1rem 0;
+    }
     display: flex;
     flex-flow: column;
+    flex: 0 1 40%;
     justify-content: center;
   }
 }
