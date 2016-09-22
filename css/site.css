@@ -1,5 +1,5 @@
-/*-------------------------------------------------------*\
-
+@charset "UTF-8";
+/*-------------------------------------------------------*
     Pintsize
     Url: http://www.pintsize.io
     Github: https://github.com/alistairtweedie/Pintsize/
@@ -36,23 +36,18 @@ slideDown
   0% {
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%); }
-
   50% {
     -webkit-transform: translateY(8%);
     transform: translateY(8%); }
-
   65% {
     -webkit-transform: translateY(-4%);
     transform: translateY(-4%); }
-
   80% {
     -webkit-transform: translateY(4%);
     transform: translateY(4%); }
-
   95% {
     -webkit-transform: translateY(-2%);
     transform: translateY(-2%); }
-
   100% {
     -webkit-transform: translateY(0%);
     transform: translateY(0%); } }
@@ -60,19 +55,14 @@ slideDown
 @-webkit-keyframes slideDown {
   0% {
     -webkit-transform: translateY(-100%); }
-
   50% {
     -webkit-transform: translateY(8%); }
-
   65% {
     -webkit-transform: translateY(-4%); }
-
   80% {
     -webkit-transform: translateY(4%); }
-
   95% {
     -webkit-transform: translateY(-2%); }
-
   100% {
     -webkit-transform: translateY(0%); } }
 
@@ -94,23 +84,18 @@ slideUp
   0% {
     -webkit-transform: translateY(100%);
     transform: translateY(100%); }
-
   50% {
     -webkit-transform: translateY(-8%);
     transform: translateY(-8%); }
-
   65% {
     -webkit-transform: translateY(4%);
     transform: translateY(4%); }
-
   80% {
     -webkit-transform: translateY(-4%);
     transform: translateY(-4%); }
-
   95% {
     -webkit-transform: translateY(2%);
     transform: translateY(2%); }
-
   100% {
     -webkit-transform: translateY(0%);
     transform: translateY(0%); } }
@@ -118,19 +103,14 @@ slideUp
 @-webkit-keyframes slideUp {
   0% {
     -webkit-transform: translateY(100%); }
-
   50% {
     -webkit-transform: translateY(-8%); }
-
   65% {
     -webkit-transform: translateY(4%); }
-
   80% {
     -webkit-transform: translateY(-4%); }
-
   95% {
     -webkit-transform: translateY(2%); }
-
   100% {
     -webkit-transform: translateY(0%); } }
 
@@ -152,23 +132,18 @@ slideLeft
   0% {
     -webkit-transform: translateX(150%);
     transform: translateX(150%); }
-
   50% {
     -webkit-transform: translateX(-8%);
     transform: translateX(-8%); }
-
   65% {
     -webkit-transform: translateX(4%);
     transform: translateX(4%); }
-
   80% {
     -webkit-transform: translateX(-4%);
     transform: translateX(-4%); }
-
   95% {
     -webkit-transform: translateX(2%);
     transform: translateX(2%); }
-
   100% {
     -webkit-transform: translateX(0%);
     transform: translateX(0%); } }
@@ -176,19 +151,14 @@ slideLeft
 @-webkit-keyframes slideLeft {
   0% {
     -webkit-transform: translateX(150%); }
-
   50% {
     -webkit-transform: translateX(-8%); }
-
   65% {
     -webkit-transform: translateX(4%); }
-
   80% {
     -webkit-transform: translateX(-4%); }
-
   95% {
     -webkit-transform: translateX(2%); }
-
   100% {
     -webkit-transform: translateX(0%); } }
 
@@ -210,23 +180,18 @@ slideRight
   0% {
     -webkit-transform: translateX(-150%);
     transform: translateX(-150%); }
-
   50% {
     -webkit-transform: translateX(8%);
     transform: translateX(8%); }
-
   65% {
     -webkit-transform: translateX(-4%);
     transform: translateX(-4%); }
-
   80% {
     -webkit-transform: translateX(4%);
     transform: translateX(4%); }
-
   95% {
     -webkit-transform: translateX(-2%);
     transform: translateX(-2%); }
-
   100% {
     -webkit-transform: translateX(0%);
     transform: translateX(0%); } }
@@ -234,19 +199,14 @@ slideRight
 @-webkit-keyframes slideRight {
   0% {
     -webkit-transform: translateX(-150%); }
-
   50% {
     -webkit-transform: translateX(8%); }
-
   65% {
     -webkit-transform: translateX(-4%); }
-
   80% {
     -webkit-transform: translateX(4%); }
-
   95% {
     -webkit-transform: translateX(-2%); }
-
   100% {
     -webkit-transform: translateX(0%); } }
 
@@ -268,35 +228,27 @@ slideExpandUp
   0% {
     -webkit-transform: translateY(100%) scaleX(0.5);
     transform: translateY(100%) scaleX(0.5); }
-
   30% {
     -webkit-transform: translateY(-8%) scaleX(0.5);
     transform: translateY(-8%) scaleX(0.5); }
-
   40% {
     -webkit-transform: translateY(2%) scaleX(0.5);
     transform: translateY(2%) scaleX(0.5); }
-
   50% {
     -webkit-transform: translateY(0%) scaleX(1.1);
     transform: translateY(0%) scaleX(1.1); }
-
   60% {
     -webkit-transform: translateY(0%) scaleX(0.9);
     transform: translateY(0%) scaleX(0.9); }
-
   70% {
     -webkit-transform: translateY(0%) scaleX(1.05);
     transform: translateY(0%) scaleX(1.05); }
-
   80% {
     -webkit-transform: translateY(0%) scaleX(0.95);
     transform: translateY(0%) scaleX(0.95); }
-
   90% {
     -webkit-transform: translateY(0%) scaleX(1.02);
     transform: translateY(0%) scaleX(1.02); }
-
   100% {
     -webkit-transform: translateY(0%) scaleX(1);
     transform: translateY(0%) scaleX(1); } }
@@ -304,28 +256,20 @@ slideExpandUp
 @-webkit-keyframes slideExpandUp {
   0% {
     -webkit-transform: translateY(100%) scaleX(0.5); }
-
   30% {
     -webkit-transform: translateY(-8%) scaleX(0.5); }
-
   40% {
     -webkit-transform: translateY(2%) scaleX(0.5); }
-
   50% {
     -webkit-transform: translateY(0%) scaleX(1.1); }
-
   60% {
     -webkit-transform: translateY(0%) scaleX(0.9); }
-
   70% {
     -webkit-transform: translateY(0%) scaleX(1.05); }
-
   80% {
     -webkit-transform: translateY(0%) scaleX(0.95); }
-
   90% {
     -webkit-transform: translateY(0%) scaleX(1.02); }
-
   100% {
     -webkit-transform: translateY(0%) scaleX(1); } }
 
@@ -347,15 +291,12 @@ expandUp
   0% {
     -webkit-transform: translateY(100%) scale(0.6) scaleY(0.5);
     transform: translateY(100%) scale(0.6) scaleY(0.5); }
-
   60% {
     -webkit-transform: translateY(-7%) scaleY(1.12);
     transform: translateY(-7%) scaleY(1.12); }
-
   75% {
     -webkit-transform: translateY(3%);
     transform: translateY(3%); }
-
   100% {
     -webkit-transform: translateY(0%) scale(1) scaleY(1);
     transform: translateY(0%) scale(1) scaleY(1); } }
@@ -363,13 +304,10 @@ expandUp
 @-webkit-keyframes expandUp {
   0% {
     -webkit-transform: translateY(100%) scale(0.6) scaleY(0.5); }
-
   60% {
     -webkit-transform: translateY(-7%) scaleY(1.12); }
-
   75% {
     -webkit-transform: translateY(3%); }
-
   100% {
     -webkit-transform: translateY(0%) scale(1) scaleY(1); } }
 
@@ -391,17 +329,14 @@ fadeIn
   0% {
     -webkit-transform: scale(0);
     transform: scale(0);
-    opacity: 0; }
-
+    opacity: 0.0; }
   60% {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
-
   80% {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
     opacity: 1; }
-
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -410,15 +345,12 @@ fadeIn
 @-webkit-keyframes fadeIn {
   0% {
     -webkit-transform: scale(0);
-    opacity: 0; }
-
+    opacity: 0.0; }
   60% {
     -webkit-transform: scale(1.1); }
-
   80% {
     -webkit-transform: scale(0.9);
     opacity: 1; }
-
   100% {
     -webkit-transform: scale(1);
     opacity: 1; } }
@@ -441,19 +373,15 @@ expandOpen
   0% {
     -webkit-transform: scale(1.8);
     transform: scale(1.8); }
-
   50% {
     -webkit-transform: scale(0.95);
     transform: scale(0.95); }
-
   80% {
     -webkit-transform: scale(1.05);
     transform: scale(1.05); }
-
   90% {
     -webkit-transform: scale(0.98);
     transform: scale(0.98); }
-
   100% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
@@ -461,16 +389,12 @@ expandOpen
 @-webkit-keyframes expandOpen {
   0% {
     -webkit-transform: scale(1.8); }
-
   50% {
     -webkit-transform: scale(0.95); }
-
   80% {
     -webkit-transform: scale(1.05); }
-
   90% {
     -webkit-transform: scale(0.98); }
-
   100% {
     -webkit-transform: scale(1); } }
 
@@ -493,32 +417,26 @@ bigEntrance
     -webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
     transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
     opacity: 0.2; }
-
   30% {
     -webkit-transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
     transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
     opacity: 1; }
-
   45% {
     -webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
     transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
     opacity: 1; }
-
   60% {
     -webkit-transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
     transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
     opacity: 1; }
-
   75% {
     -webkit-transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
     transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
     opacity: 1; }
-
   90% {
     -webkit-transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
     transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
     opacity: 1; }
-
   100% {
     -webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
     transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
@@ -528,27 +446,21 @@ bigEntrance
   0% {
     -webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
     opacity: 0.2; }
-
   30% {
     -webkit-transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
     opacity: 1; }
-
   45% {
     -webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
     opacity: 1; }
-
   60% {
     -webkit-transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
     opacity: 1; }
-
   75% {
     -webkit-transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
     opacity: 1; }
-
   90% {
     -webkit-transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
     opacity: 1; }
-
   100% {
     -webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
     opacity: 1; } }
@@ -574,27 +486,21 @@ hatch
   0% {
     -webkit-transform: rotate(0deg) scaleY(0.6);
     transform: rotate(0deg) scaleY(0.6); }
-
   20% {
     -webkit-transform: rotate(-2deg) scaleY(1.05);
     transform: rotate(-2deg) scaleY(1.05); }
-
   35% {
     -webkit-transform: rotate(2deg) scaleY(1);
     transform: rotate(2deg) scaleY(1); }
-
   50% {
     -webkit-transform: rotate(-2deg);
     transform: rotate(-2deg); }
-
   65% {
     -webkit-transform: rotate(1deg);
     transform: rotate(1deg); }
-
   80% {
     -webkit-transform: rotate(-1deg);
     transform: rotate(-1deg); }
-
   100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); } }
@@ -602,22 +508,16 @@ hatch
 @-webkit-keyframes hatch {
   0% {
     -webkit-transform: rotate(0deg) scaleY(0.6); }
-
   20% {
     -webkit-transform: rotate(-2deg) scaleY(1.05); }
-
   35% {
     -webkit-transform: rotate(2deg) scaleY(1); }
-
   50% {
     -webkit-transform: rotate(-2deg); }
-
   65% {
     -webkit-transform: rotate(1deg); }
-
   80% {
     -webkit-transform: rotate(-1deg); }
-
   100% {
     -webkit-transform: rotate(0deg); } }
 
@@ -641,23 +541,18 @@ bounce
   0% {
     -webkit-transform: translateY(0%) scaleY(0.6);
     transform: translateY(0%) scaleY(0.6); }
-
   60% {
     -webkit-transform: translateY(-100%) scaleY(1.1);
     transform: translateY(-100%) scaleY(1.1); }
-
   70% {
     -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1.05);
     transform: translateY(0%) scaleY(0.95) scaleX(1.05); }
-
   80% {
     -webkit-transform: translateY(0%) scaleY(1.05) scaleX(1);
     transform: translateY(0%) scaleY(1.05) scaleX(1); }
-
   90% {
     -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1);
     transform: translateY(0%) scaleY(0.95) scaleX(1); }
-
   100% {
     -webkit-transform: translateY(0%) scaleY(1) scaleX(1);
     transform: translateY(0%) scaleY(1) scaleX(1); } }
@@ -665,19 +560,14 @@ bounce
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(0%) scaleY(0.6); }
-
   60% {
     -webkit-transform: translateY(-100%) scaleY(1.1); }
-
   70% {
     -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1.05); }
-
   80% {
     -webkit-transform: translateY(0%) scaleY(1.05) scaleX(1); }
-
   90% {
     -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1); }
-
   100% {
     -webkit-transform: translateY(0%) scaleY(1) scaleX(1); } }
 
@@ -699,12 +589,10 @@ pulse
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
     opacity: 0.7; }
-
   50% {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1; }
-
   100% {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
@@ -714,11 +602,9 @@ pulse
   0% {
     -webkit-transform: scale(0.95);
     opacity: 0.7; }
-
   50% {
     -webkit-transform: scale(1);
     opacity: 1; }
-
   100% {
     -webkit-transform: scale(0.95);
     opacity: 0.7; } }
@@ -740,11 +626,9 @@ floating
   0% {
     -webkit-transform: translateY(0%);
     transform: translateY(0%); }
-
   50% {
     -webkit-transform: translateY(8%);
     transform: translateY(8%); }
-
   100% {
     -webkit-transform: translateY(0%);
     transform: translateY(0%); } }
@@ -752,10 +636,8 @@ floating
 @-webkit-keyframes floating {
   0% {
     -webkit-transform: translateY(0%); }
-
   50% {
     -webkit-transform: translateY(8%); }
-
   100% {
     -webkit-transform: translateY(0%); } }
 
@@ -776,11 +658,9 @@ tossing
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   50% {
     -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg); }
-
   100% {
     -webkit-transform: rotate(-720deg);
     transform: rotate(-720deg); } }
@@ -788,10 +668,8 @@ tossing
 @-webkit-keyframes tossing {
   0% {
     -webkit-transform: rotate(0deg); }
-
   50% {
     -webkit-transform: rotate(-360deg); }
-
   100% {
     -webkit-transform: rotate(-720deg); } }
 
@@ -815,27 +693,21 @@ pullUp
   0% {
     -webkit-transform: scaleY(0.1);
     transform: scaleY(0.1); }
-
   40% {
     -webkit-transform: scaleY(1.02);
     transform: scaleY(1.02); }
-
   60% {
     -webkit-transform: scaleY(0.98);
     transform: scaleY(0.98); }
-
   80% {
     -webkit-transform: scaleY(1.01);
     transform: scaleY(1.01); }
-
   100% {
     -webkit-transform: scaleY(0.98);
     transform: scaleY(0.98); }
-
   80% {
     -webkit-transform: scaleY(1.01);
     transform: scaleY(1.01); }
-
   100% {
     -webkit-transform: scaleY(1);
     transform: scaleY(1); } }
@@ -843,22 +715,16 @@ pullUp
 @-webkit-keyframes pullUp {
   0% {
     -webkit-transform: scaleY(0.1); }
-
   40% {
     -webkit-transform: scaleY(1.02); }
-
   60% {
     -webkit-transform: scaleY(0.98); }
-
   80% {
     -webkit-transform: scaleY(1.01); }
-
   100% {
     -webkit-transform: scaleY(0.98); }
-
   80% {
     -webkit-transform: scaleY(1.01); }
-
   100% {
     -webkit-transform: scaleY(1); } }
 
@@ -882,27 +748,21 @@ pullDown
   0% {
     -webkit-transform: scaleY(0.1);
     transform: scaleY(0.1); }
-
   40% {
     -webkit-transform: scaleY(1.02);
     transform: scaleY(1.02); }
-
   60% {
     -webkit-transform: scaleY(0.98);
     transform: scaleY(0.98); }
-
   80% {
     -webkit-transform: scaleY(1.01);
     transform: scaleY(1.01); }
-
   100% {
     -webkit-transform: scaleY(0.98);
     transform: scaleY(0.98); }
-
   80% {
     -webkit-transform: scaleY(1.01);
     transform: scaleY(1.01); }
-
   100% {
     -webkit-transform: scaleY(1);
     transform: scaleY(1); } }
@@ -910,22 +770,16 @@ pullDown
 @-webkit-keyframes pullDown {
   0% {
     -webkit-transform: scaleY(0.1); }
-
   40% {
     -webkit-transform: scaleY(1.02); }
-
   60% {
     -webkit-transform: scaleY(0.98); }
-
   80% {
     -webkit-transform: scaleY(1.01); }
-
   100% {
     -webkit-transform: scaleY(0.98); }
-
   80% {
     -webkit-transform: scaleY(1.01); }
-
   100% {
     -webkit-transform: scaleY(1); } }
 
@@ -949,27 +803,21 @@ stretchLeft
   0% {
     -webkit-transform: scaleX(0.3);
     transform: scaleX(0.3); }
-
   40% {
     -webkit-transform: scaleX(1.02);
     transform: scaleX(1.02); }
-
   60% {
     -webkit-transform: scaleX(0.98);
     transform: scaleX(0.98); }
-
   80% {
     -webkit-transform: scaleX(1.01);
     transform: scaleX(1.01); }
-
   100% {
     -webkit-transform: scaleX(0.98);
     transform: scaleX(0.98); }
-
   80% {
     -webkit-transform: scaleX(1.01);
     transform: scaleX(1.01); }
-
   100% {
     -webkit-transform: scaleX(1);
     transform: scaleX(1); } }
@@ -977,22 +825,16 @@ stretchLeft
 @-webkit-keyframes stretchLeft {
   0% {
     -webkit-transform: scaleX(0.3); }
-
   40% {
     -webkit-transform: scaleX(1.02); }
-
   60% {
     -webkit-transform: scaleX(0.98); }
-
   80% {
     -webkit-transform: scaleX(1.01); }
-
   100% {
     -webkit-transform: scaleX(0.98); }
-
   80% {
     -webkit-transform: scaleX(1.01); }
-
   100% {
     -webkit-transform: scaleX(1); } }
 
@@ -1016,27 +858,21 @@ stretchRight
   0% {
     -webkit-transform: scaleX(0.3);
     transform: scaleX(0.3); }
-
   40% {
     -webkit-transform: scaleX(1.02);
     transform: scaleX(1.02); }
-
   60% {
     -webkit-transform: scaleX(0.98);
     transform: scaleX(0.98); }
-
   80% {
     -webkit-transform: scaleX(1.01);
     transform: scaleX(1.01); }
-
   100% {
     -webkit-transform: scaleX(0.98);
     transform: scaleX(0.98); }
-
   80% {
     -webkit-transform: scaleX(1.01);
     transform: scaleX(1.01); }
-
   100% {
     -webkit-transform: scaleX(1);
     transform: scaleX(1); } }
@@ -1044,27 +880,20 @@ stretchRight
 @-webkit-keyframes stretchRight {
   0% {
     -webkit-transform: scaleX(0.3); }
-
   40% {
     -webkit-transform: scaleX(1.02); }
-
   60% {
     -webkit-transform: scaleX(0.98); }
-
   80% {
     -webkit-transform: scaleX(1.01); }
-
   100% {
     -webkit-transform: scaleX(0.98); }
-
   80% {
     -webkit-transform: scaleX(1.01); }
-
   100% {
     -webkit-transform: scaleX(1); } }
 
-/*-------------------------------------------------------*\
-    Variables
+/*-------------------------------------------------------*    Variables
 /*-------------------------------------------------------*/
 /*	Grid
 --------------------------------------------------------*/
@@ -1088,11 +917,9 @@ stretchRight
 .vortice {
   font-family: "vortice-concept", Din, Arial Narrow, Futura, Georgia, Berkeley, serif; }
 
-/*-------------------------------------------------------*\
-    Functions
+/*-------------------------------------------------------*    Functions
 /*-------------------------------------------------------*/
-/*-------------------------------------------------------*\
-    Mixins
+/*-------------------------------------------------------*    Mixins
 /*-------------------------------------------------------*/
 /*	Column width
 -------------------------------------------------------*/
@@ -1102,14 +929,12 @@ stretchRight
 -------------------------------------------------------*/
 /*	Breakpoints
 -------------------------------------------------------*/
-/*-------------------------------------------------------*\
-    Helper classes
+/*-------------------------------------------------------*    Helper classes
 /*-------------------------------------------------------*/
 .u-center {
   text-align: center; }
 
-/*-------------------------------------------------------*\
-    Normalise
+/*-------------------------------------------------------*    Normalise
 /*-------------------------------------------------------*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -1139,14 +964,29 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   display: block; }
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-audio, canvas, progress, video {
+audio,
+canvas,
+progress,
+video {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
@@ -1164,7 +1004,8 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-[hidden], template {
+[hidden],
+template {
   display: none; }
 
 /* Links
@@ -1178,7 +1019,8 @@ a {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0; }
 
 /* Text-level semantics
@@ -1192,7 +1034,8 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-b, strong {
+b,
+strong {
   font-weight: bold; }
 
 /**
@@ -1225,7 +1068,8 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -1277,7 +1121,10 @@ pre {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, monospace;
   font-size: 1em; }
 
@@ -1293,7 +1140,11 @@ code, kbd, pre, samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   color: inherit;
   /* 1 */
   font: inherit;
@@ -1313,7 +1164,8 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-button, select {
+button,
+select {
   text-transform: none; }
 
 /**
@@ -1323,7 +1175,10 @@ button, select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -1332,17 +1187,20 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-button[disabled], html input[disabled] {
+button[disabled],
+html input[disabled] {
   cursor: default;
   opacity: 0.3; }
-  button[disabled]:hover, html input[disabled]:hover {
+  button[disabled]:hover,
+  html input[disabled]:hover {
     background-color: transparent;
     color: inherit; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -1360,7 +1218,8 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1373,7 +1232,8 @@ input[type="checkbox"], input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
 /**
@@ -1394,7 +1254,8 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
@@ -1437,11 +1298,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-td, th {
+td,
+th {
   padding: 0; }
 
-/*-------------------------------------------------------*\
-    Base
+/*-------------------------------------------------------*    Base
 /*-------------------------------------------------------*/
 html {
   font-size: 62.5%; }
@@ -1486,7 +1347,6 @@ a {
   white-space: nowrap; }
   @media (min-width: 640px) {
     .hours strong {
-      min-width: 100px;
       display: inline-block; } }
 
 ul.social {
@@ -1520,8 +1380,7 @@ ul.social {
     ul.social li.twitter a {
       background-image: url(../images/icon-twitter.svg); }
 
-/*-------------------------------------------------------*\
-    Grid
+/*-------------------------------------------------------*    Grid
 /*-------------------------------------------------------*/
 .section {
   padding: 4rem 0;
@@ -1542,6 +1401,7 @@ ul.social {
 .row:before, .row:after {
   content: "";
   display: table; }
+
 .row:after {
   clear: both; }
 
@@ -1617,8 +1477,7 @@ ul.social {
   .p-12 {
     margin-left: 102%; } }
 
-/*-------------------------------------------------------*\
-  Typography
+/*-------------------------------------------------------*  Typography
 /*-------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "atrament-web", "Atrament std", "Din 1451 Std", Din, Arial Narrow, Futura, serif;
@@ -1643,7 +1502,7 @@ h1 {
 h2 {
   font-size: 25px;
   font-size: 2.5rem;
-  line-height: 1.68;
+  line-height: 1.680;
   margin-top: 42px;
   margin-top: 4.2rem;
   margin-bottom: 1.85rem; }
@@ -1796,8 +1655,7 @@ sup, sub {
 sub {
   top: 0.4em; }
 
-/*-------------------------------------------------------*\
-    Content areas
+/*-------------------------------------------------------*    Content areas
 /*-------------------------------------------------------*/
 div.splash {
   background: #FBF9F9;
@@ -1895,7 +1753,7 @@ div.tagline {
       div.tagline h3 strong {
         display: inline; } }
 
-div.mission {
+div.mission, div.donate {
   background: url(../images/bg-brick.jpg), url(../images/bg-triangle-left.png) no-repeat 100% -231px;
   background-blend-mode: luminosity;
   padding: 6rem 3rem 2rem;
@@ -1913,32 +1771,29 @@ div.mission {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
-  @media (min-width: 840px) { }
   @media (min-width: 920px) {
-    div.mission {
+    div.mission, div.donate {
       padding: 6rem 8rem;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row; } }
-  div.mission .img {
+  div.mission .img, div.donate .img {
     display: inline-block;
     width: 100%;
     vertical-align: top;
     z-index: 1; }
-    @media (min-width: 700px) { }
-    @media (min-width: 840px) { }
-    div.mission .img img {
+    div.mission .img img, div.donate .img img {
       height: auto;
       max-height: 50vh;
       max-width: 100%;
       border: 15px solid #fff; }
       @media (min-width: 920px) {
-        div.mission .img img {
+        div.mission .img img, div.donate .img img {
           max-height: 70vh;
           height: 70vh; } }
-  div.mission .content {
+  div.mission .content, div.donate .content {
     display: inline-block;
     margin-top: 2rem;
     padding: 2rem 3rem;
@@ -1947,17 +1802,17 @@ div.mission {
     background: #CDFFEB;
     text-align: left; }
     @media (min-width: 600px) {
-      div.mission .content {
+      div.mission .content, div.donate .content {
         padding: 2rem 8rem; } }
     @media (min-width: 920px) {
-      div.mission .content {
+      div.mission .content, div.donate .content {
         position: relative;
         left: -5px;
         margin-top: 2rem;
         margin-right: -5px;
         padding: 2rem 3rem; } }
     @media (min-width: 1120px) {
-      div.mission .content {
+      div.mission .content, div.donate .content {
         padding: 2rem 8rem; } }
 
 div.features {
@@ -1983,16 +1838,7 @@ div.features {
       font-size: 5rem;
       padding: 2rem;
       line-height: 1.2;
-      margin-top: 2rem;
-      margin-bottom: 5rem; }
-    div.features .content h3 {
-      font-size: 2.5rem;
-      margin: 15px 0 0;
-      padding: 10px 10%;
-      background: #CDFCFF; }
-      @media (min-width: 640px) {
-        div.features .content h3 {
-          font-size: 3rem; } }
+      margin-top: 2rem; }
     div.features .content p {
       font-size: 1.75rem;
       padding: 15px 0 0 10%;
@@ -2010,22 +1856,14 @@ div.features {
       text-align: left; }
       @media (min-width: 480px) {
         div.features .content li {
-          width: 46%;
+          width: 30%;
           margin-right: 3%; } }
       div.features .content li img {
         display: inline-block;
         border: 3px solid #fff; }
-        @media (min-width: 900px) {
-          div.features .content li img {
-            max-width: 40%; } }
       div.features .content li .text {
         display: inline-block;
-        vertical-align: top;
-        margin: -1rem 0 1rem; }
-        @media (min-width: 900px) {
-          div.features .content li .text {
-            width: 40%;
-            margin: 0; } }
+        vertical-align: top; }
         div.features .content li .text .img {
           width: 150px;
           display: block;
@@ -2046,7 +1884,7 @@ div.mapper {
   div.mapper > h1 {
     text-align: center;
     font-size: 5em;
-    margin-bottom: 0.25em; }
+    margin-bottom: .25em; }
   div.mapper .map-container {
     width: 100%;
     display: inline-block;
@@ -2123,6 +1961,28 @@ div.mapper {
     vertical-align: top;
     border: 15px solid #fff !important; }
 
+div.donate {
+  padding-top: 12rem; }
+  div.donate .content {
+    padding-top: 0; }
+  div.donate .content__inner {
+    padding: 0 10%; }
+    @media (min-width: 960px) {
+      div.donate .content__inner {
+        padding: 0 20%; } }
+    div.donate .content__inner .image {
+      background: #FBF9F9;
+      border-radius: 50%;
+      margin: -10rem auto 1rem;
+      max-width: 200px;
+      padding: 2rem; }
+    div.donate .content__inner h2 {
+      margin-top: 1rem;
+      text-align: center; }
+  div.donate .btn {
+    margin: 0 auto;
+    text-align: center; }
+
 div.joinus {
   background: url(../images/pic-onstage.jpg) no-repeat;
   -webkit-background-size: auto 100%;
@@ -2168,12 +2028,11 @@ div.joinus {
         background: #ff9c08;
         border-bottom: none; }
 
-/*-------------------------------------------------------*\
-    Mixtape page
+/*-------------------------------------------------------*    Mixtape page
 /*-------------------------------------------------------*/
 div.mixtape {
   background: url(../images/kittehs.gif) no-repeat;
-  background-color: #67f7ff;
+  background-color: #67f6ff;
   -webkit-background-size: 100% auto;
   background-size: 100% auto;
   background-position: center 18px;
@@ -2218,8 +2077,7 @@ div.mixtape {
     div.mixtape .content .details {
       padding: 2rem 2rem 0; }
 
-/*-------------------------------------------------------*\
-    Header
+/*-------------------------------------------------------*    Header
 /*-------------------------------------------------------*/
 header {
   background: url(../images/bg-triangle-left.png) no-repeat 100% 300%;
@@ -2233,8 +2091,7 @@ header {
   .subpage header {
     background: transparent; }
 
-/*-------------------------------------------------------*\
-    Footer
+/*-------------------------------------------------------*    Footer
 /*-------------------------------------------------------*/
 footer {
   background: #fff;
@@ -2309,8 +2166,7 @@ footer {
     footer .🐠 span {
       font-weight: normal; }
 
-/*-------------------------------------------------------*\
-    Content areas
+/*-------------------------------------------------------*    Content areas
 /*-------------------------------------------------------*/
 .announce-holiday {
   font-weight: bold;
@@ -2419,8 +2275,7 @@ div.announce .content {
     div.announce .content li .fb_iframe_widget > span:before {
       content: 'Follow our progress on Facebook'; }
 
-/*-------------------------------------------------------*\
-    Mailchimp overlay
+/*-------------------------------------------------------*    Mailchimp overlay
 /*-------------------------------------------------------*/
 div.overlay {
   width: 100%;
@@ -2533,8 +2388,7 @@ div.overlay {
         div.overlay #mc_embed_signup form input[type=submit]:hover {
           background: #ff9c08; }
 
-/*-------------------------------------------------------*\
-  Buttons
+/*-------------------------------------------------------*  Buttons
 /*-------------------------------------------------------*/
 .primary-button {
   display: inline-block;
@@ -2544,7 +2398,7 @@ div.overlay {
   font-size: 14px;
   font-weight: 600;
   line-height: 38px;
-  letter-spacing: 0.1rem;
+  letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
@@ -2565,16 +2419,25 @@ div.overlay {
     color: #fff;
     background: #222; }
 
-/*-------------------------------------------------------*\
-  Forms
+/*-------------------------------------------------------*  Forms
 /*-------------------------------------------------------*/
-input, textarea, select {
+input,
+textarea,
+select {
   margin-bottom: 1.5rem; }
 
-figure, form {
+figure,
+form {
   margin-bottom: 2.5rem; }
 
-input[type="email"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+input[type="email"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
   padding: 9px 10px;
   background-color: #fff;
   border: 1px solid #D1D1D1;
@@ -2584,7 +2447,13 @@ input[type="email"], input[type="search"], input[type="text"], input[type="tel"]
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-input[type="email"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
+input[type="email"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
@@ -2594,13 +2463,21 @@ textarea {
   padding-top: 6px;
   padding-bottom: 6px; }
 
-input[type="email"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
   border: 1px solid #76321F;
   outline: 0; }
 
-label, legend {
+label,
+legend {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
   font-weight: 600; }
 
 fieldset {
@@ -2608,17 +2485,17 @@ fieldset {
   border-width: 0;
   margin-bottom: 1.5rem; }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   display: inline;
-  margin-right: 0.5em; }
+  margin-right: .5em; }
 
 label > .label-body {
   display: inline-block;
-  margin-left: 0.5rem;
+  margin-left: .5rem;
   font-weight: normal; }
 
-/*-------------------------------------------------------*\
-    Links
+/*-------------------------------------------------------*    Links
 /*-------------------------------------------------------*/
 a {
   color: #76321F;
@@ -2635,8 +2512,7 @@ a {
   a:focus {
     outline: 2px solid #76321F; }
 
-/*-------------------------------------------------------*\
-    Lists
+/*-------------------------------------------------------*    Lists
 /*-------------------------------------------------------*/
 ul {
   list-style: circle inside; }
@@ -2649,30 +2525,34 @@ ol, ul {
   margin-top: 0;
   margin-bottom: 2.5rem; }
 
-ul ul, ul ol, ol ol, ol ul {
+ul ul,
+ul ol,
+ol ol,
+ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%; }
 
 li {
   margin-bottom: 1rem; }
 
-/*-------------------------------------------------------*\
-    Tables
+/*-------------------------------------------------------*    Tables
 /*-------------------------------------------------------*/
 table {
   margin-bottom: 2.5rem; }
 
-th, td {
+th,
+td {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #E1E1E1; }
 
-th:first-child, td:first-child {
+th:first-child,
+td:first-child {
   padding-left: 0; }
 
-th:last-child, td:last-child {
+th:last-child,
+td:last-child {
   padding-right: 0; }
 
-/*---------*\
-    Site
+/*---------*    Site
 /*---------*/

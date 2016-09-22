@@ -54,7 +54,6 @@ a {
   white-space: nowrap;
 
   @include break-at(640px) {
-    min-width: 100px;
     display: inline-block;
   }
 }
