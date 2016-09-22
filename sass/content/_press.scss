@@ -7,11 +7,8 @@ div.press {
   background-color: darken($qc-80sblue,20);
   background-size: 100% auto;
   background-position: center 18px;
-  padding: 10rem $page-margin-narrow;
-  min-height: 500px;
 
   @include break-at(640px) {
-    padding: 4rem $page-margin-wide;
     background-position: center center;
   }
 
@@ -23,8 +20,8 @@ div.press {
 
     @include break-at(640px) {
       padding: 6rem;
-      width: 500px;
-      height: 500px;
+      max-width: 800px;
+      max-height: 800px;
       margin: 100px auto;
       border-radius: 50%;
     }
