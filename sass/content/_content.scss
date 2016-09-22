@@ -428,6 +428,10 @@ div.joinus {
 
     .content__inner {
       align-self: center;
+
+      img { max-width: 150px; }
+
+      h2 { margin-top: 1rem; }
     }
 
     a {
