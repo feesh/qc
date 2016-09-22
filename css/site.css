@@ -1753,7 +1753,7 @@ div.tagline {
       div.tagline h3 strong {
         display: inline; } }
 
-div.mission {
+div.mission, div.donate {
   background: url(../images/bg-brick.jpg), url(../images/bg-triangle-left.png) no-repeat 100% -231px;
   background-blend-mode: luminosity;
   padding: 6rem 3rem 2rem;
@@ -1772,28 +1772,28 @@ div.mission {
   -ms-flex-direction: column;
   flex-direction: column; }
   @media (min-width: 920px) {
-    div.mission {
+    div.mission, div.donate {
       padding: 6rem 8rem;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row; } }
-  div.mission .img {
+  div.mission .img, div.donate .img {
     display: inline-block;
     width: 100%;
     vertical-align: top;
     z-index: 1; }
-    div.mission .img img {
+    div.mission .img img, div.donate .img img {
       height: auto;
       max-height: 50vh;
       max-width: 100%;
       border: 15px solid #fff; }
       @media (min-width: 920px) {
-        div.mission .img img {
+        div.mission .img img, div.donate .img img {
           max-height: 70vh;
           height: 70vh; } }
-  div.mission .content {
+  div.mission .content, div.donate .content {
     display: inline-block;
     margin-top: 2rem;
     padding: 2rem 3rem;
@@ -1802,17 +1802,17 @@ div.mission {
     background: #CDFFEB;
     text-align: left; }
     @media (min-width: 600px) {
-      div.mission .content {
+      div.mission .content, div.donate .content {
         padding: 2rem 8rem; } }
     @media (min-width: 920px) {
-      div.mission .content {
+      div.mission .content, div.donate .content {
         position: relative;
         left: -5px;
         margin-top: 2rem;
         margin-right: -5px;
         padding: 2rem 3rem; } }
     @media (min-width: 1120px) {
-      div.mission .content {
+      div.mission .content, div.donate .content {
         padding: 2rem 8rem; } }
 
 div.features {
@@ -1960,6 +1960,28 @@ div.mapper {
     width: 100%;
     vertical-align: top;
     border: 15px solid #fff !important; }
+
+div.donate {
+  padding-top: 12rem; }
+  div.donate .content {
+    padding-top: 0; }
+  div.donate .content__inner {
+    padding: 0 10%; }
+    @media (min-width: 960px) {
+      div.donate .content__inner {
+        padding: 0 20%; } }
+    div.donate .content__inner .image {
+      background: #FBF9F9;
+      border-radius: 50%;
+      margin: -10rem auto 1rem;
+      max-width: 200px;
+      padding: 2rem; }
+    div.donate .content__inner h2 {
+      margin-top: 1rem;
+      text-align: center; }
+  div.donate .btn {
+    margin: 0 auto;
+    text-align: center; }
 
 div.joinus {
   background: url(../images/pic-onstage.jpg) no-repeat;

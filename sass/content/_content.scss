@@ -132,7 +132,7 @@ div.tagline {
   }
 }
 
-div.mission {
+div.mission, div.donate {
   background: url(../images/bg-brick.jpg),
       url(../images/bg-triangle-left.png) no-repeat 100% -231px;
   background-blend-mode: luminosity;
@@ -364,6 +364,40 @@ div.mapper {
     vertical-align: top;
     border: 15px solid #fff !important;
   }
+}
+
+div.donate {
+  padding-top: 12rem;
+
+  .content {
+    padding-top: 0;
+  }
+
+  .content__inner {
+    padding: 0 10%;
+
+    @include break-at(960px) {
+      padding: 0 20%;
+    }
+
+    .image {
+      background: $qc-white;
+      border-radius: 50%;
+      margin: -10rem auto 1rem;
+      max-width: 200px;
+      padding: 2rem;
+    }
+
+    h2 {
+      margin-top: 1rem;
+      text-align: center;
+    }
+  }
+  .btn {
+    margin: 0 auto;
+    text-align: center;
+  }
+  // .text, .btn { flex: 1; }
 }
 
 div.joinus {
