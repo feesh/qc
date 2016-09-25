@@ -1,0 +1,56 @@
+/*-------------------------------------------------------*\
+    Press page
+/*-------------------------------------------------------*/
+
+div.press {
+  background: url(../images/kittehs.gif) no-repeat;
+  background-color: darken($qc-80sblue,20);
+  background-size: 100% auto;
+  background-position: center 18px;
+
+  @include break-at(640px) {
+    background-position: center center;
+  }
+
+  .content {
+    padding: $page-margin-narrow;
+    background: $qc-white;
+    text-align: center;
+    display: flex;
+
+    @include break-at(640px) {
+      padding: 6rem;
+      max-width: 800px;
+      max-height: 800px;
+      margin: 100px auto;
+      border-radius: 50%;
+    }
+
+    .content__inner {
+      align-self: center;
+    }
+
+    a {
+      display: block;
+      width: 80%;
+      background: $qc-maroon;
+      padding: 2rem;
+      color: #fff;
+      margin: 0 auto;
+
+      @include break-at(640px) {
+        width: 50%;
+      }
+
+      &:hover {
+        background: $qc-orange;
+        border-bottom: none;
+      }
+    }
+
+    .details {
+      padding: 2rem 2rem 0;
+    }
+  }
+}
+
